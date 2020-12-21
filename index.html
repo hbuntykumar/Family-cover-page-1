@@ -1,0 +1,21 @@
+<html>
+<head><title>fAMILY COVER PAGE</title></head>
+
+<body>
+    <img src="https://www.bookemon.com/get_file.php?file=bth_1a/0c231f11cf3894a0151388d049f2c3db.jpg" id="Family_cover_page">
+    <h1 id="My_Family">My Family</h1>
+    <button onclick="next()">next</button>
+    <script>
+        var My_family = ["Father","Mother","Brother"];
+        var Family_img =["father.jpg","mother.jpg","brother.jpeg"];
+        var i =0;
+function next() {
+
+    document.getElementById("My_Family").innerHTML = My_family[i];
+    document.getElementById("Family_cover_page").src = Family_img[i];
+    i++;
+
+}
+    </script>
+</body>
+</html>
